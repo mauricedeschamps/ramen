@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ramen Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .light {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    .dark {
+      background-color: #1e1e1e;
+      color: #eee;
+    }
+    .toggle-button {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #666;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    .item {
+      margin: 10px 0;
+    }
+    .jp {
+      font-size: 0.9em;
+      color: gray;
+    }
+  </style>
+</head>
+<body class="light">
+  <button class="toggle-button" onclick="toggleTheme()">Toggle Background</button>
+
+  <h1>Ramen Beginner's Guide <span class="jp">ラーメン<br>
+    初心者ガイド</span></h1>
+
+  <h2>Styles <span class="jp">スタイル</span></h2>
+
+<div class="item">
+  <strong>Shoyu (Soy Sauce)</strong><br>
+  <span class="jp">醤油（Shōyu）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDkTHEmKsMME3FSNJ0hPgeJhAdSF9jHTaeiVWLAU-CM5g-pD5q0HL2gNJ&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Miso (soy beans paste)</strong><br>
+  <span class="jp">味噌（Miso）</span><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwtGdxr3TXah12EvSsRDysIqE2WIYgbZm_tK9UlphdvBf-flvfwjr5-GE&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Shio (Salt)</strong><br>
+  <span class="jp">塩（Shio）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFkoDT6ci1gAZaEl1ghUxWWrXraCi4Y6hATv9nEyG9Ln55EXvMKv_iWKb4&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Tonkotsu (Pork Bone)</strong><br>
+  <span class="jp">豚骨（Tonkotsu）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQwY17xlfdpGefpuaHjvvh24rmDjW9cUb7ANK3qcWE2txdOPTppTaJbo&s=10" alt="代替テキスト" width="300" height="200">
+  
+</div>
+
+  <h2>Regional Types <span class="jp"><br>
+    ご当地ラーメン</span></h2>
+  <div class="item">Sapporo <span class="jp">札幌（味噌）</span></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtms3RXHqlBkY6DY_aiw2q9q88-SqqyWw0UuFgdRzQe28sEh_iJNC-09Y&s=10" alt="代替テキスト" width="300" height="200">
+  <div class="item">Hakata <span class="jp">博多（豚骨）</span></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pIOUIsWoVF_XCd0WQmgIw395aHugxfJTAqq5Rpadfs2K0YlaMvsjE9cx&s=10" alt="代替テキスト" width="300" height="200">
+  <div class="item">Tokyo <span class="jp">東京（醤油）</span></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBxxr52L_YPGsp0vTjK9Xw2jb_91x1M59M03FYzcw-bZ8k3_Q10-mrha9&s=10" alt="代替テキスト" width="300" height="200">
+  <div class="item">Kitakata <span class="jp">喜多方（平打ち麺＋醤油）</span></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr2CQGD2DUQGILd0BRL-dNDZRw930paVJZ23OZKpfbN1wlNE7jdIB9ar50&s=10" alt="代替テキスト" width="300" height="200">
+
+  <h2>Soup Base <span class="jp">スープ</span></h2>
+  
+  <div class="item">Chicken <span class="jp">鶏ガラ (Torigara)</span></div>
+  <img src="https://recipe.r10s.jp/recipe-space/d/strg/ctrl/3/32ae65262b5fa41acfd27b805aafd8f7adb0df63.70.2.3.2.jpg?interpolation=lanczos-none&fit=around|600:600&crop=600:600;*,*" alt="代替テキスト" width="300" height="200">
+  
+  <div class="item">Pork Bone <span class="jp">豚骨 (Tonkotsu)</span></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MYXCuFrcdRQp2ExJ0VIPolylaC9SODWLD9eh-tmXpqJS6uGZw3Rmafs&s=10" alt="代替テキスト" width="300" height="200">
+  
+  <div class="item">Fish <span class="jp">魚介 (Gyokai)</span></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHOpcwcpvYd-V9TEJg1Mww3JPe1TVjv4Ch8U1-znhgW4PKGr9u7B_f9M&s=10" alt="代替テキスト" width="300" heigh="200">
+  
+  <div class="item">Vegetable <span class="jp">野菜 (Yasai)</span></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtHuHqx_mE_WdyAgxeZ3ZRijv456Gdd7Geky5M_850RSpk_ouwcHtkpk&s=10" alt="代替テキスト" width="300" height="200">
+  
+  <h2>Noodle Types <span class="jp">麺の種類</span></h2>
+  <div class="item">Thin <span class="jp">細麺 (Hoso-men)</span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLsRNnUodu_BcWUh6iCtRBaONfX_jamN4sP0-WtGH_zZ7vsHsmMtVOu77&s=10" alt="代替テキスト" width="300" height="200"></div>
+  <div class="item">Thick <span class="jp">太麺 (Futo-men)</span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4A-wwwulpNCpkV6G5jOw8PTPxMf10HG-UN39Jbpw9KeVy5rAng2HdMVB5&s=10" alt="代替テキスト" width="300" height="200"></div>
+  <div class="item">Wavy <span class="jp">ちぢれ麺 (Chijire-men)</span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSfUJDw3UsKF2j3t1dqBOH1ilwMwB2ingRIsA3dXhEj2mkPt7Wb177If0&s=10" alt="代替テキスト" width="300" height="200"></div>
+  <div class="item">Straight <span class="jp">ストレート麺 (Straight-men)</span>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTl2yOCmYKDKAU6N6RXLEkhFckXyYjY_ekEx_kywYZDoSvXvM4LY5Jz4&s=10" alt="代替テキスト" width="300" height="200"></div>
+<h2>Toppings <span class="jp">トッピング </span></h2>
+
+<div class="item">
+  <strong>Chashu (Pork slices)</strong><br>
+  <span class="jp">チャーシュー（Chāshū）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwV0Cg46tqRjI6sXZAeV5UV6HhUhNIz0Aj2BVUG0vUxonjo5tYOr7jWZw&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Nori (Seaweed)</strong><br>
+  <span class="jp">海苔（Nori）</span><br>
+  <img src="https://www.satofull.jp/upload/save_image/659/065900002/1088621_04_1630543776.jpg" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Menma (Bamboo shoots)</strong><br>
+  <span class="jp">メンマ（Menma）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxyQH8FCSkAkXNa6cAhiz5_KSOXffgQObXEAHTYlpGWEaHjso15YLXlzU&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Negi (Green onion)</strong><br>
+  <span class="jp">ネギ（Negi）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpv9ODxBF4arUf5GJTnEPRXVohR8FsrzwX4NF-aeOFnXKXRkdbc7aHFt4w&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Naruto (Fish paste)</strong><br>
+  <span class="jp">ナルト（Naruto）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSHooL5_zBt5s-FPfujtAE-EaPUE_beEftp2JYIt01Elf2HOOEJXK6QbB&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Boiled Egg</strong><br>
+  <span class="jp">煮玉子（Nitamago）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKcfPpiHLWv6rGQc7N5ToMDVU0y0rnjONoIvMQwmeWNXhneGETBKdFzPr_&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Corn and Butter</strong><br>
+  <span class="jp">コーン＆バター（Kōn & Batā）</span><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ivHwH3bobpFOTyMVtk4AfcGguso1dJP2alNE3F15Ln3OrvGRFJJghUbJ&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Wood Ear Mushroom</strong><br>
+  <span class="jp">きくらげ（Kikurage）
+  </span>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYMe6y2tfpP_RPxn64gvlrxzLkaFoLyrvha0L9u9gIxy4s8tDVqGpzpY&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+  
+  <div class="item">
+    <strong>Red Pickled Ginger</strong><br>
+  <span class="jp">紅生姜（Beni-shōga）</span>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPaxBvxB0o6RPITm4m-e32H6WPfTzfGf3vsATx0qU4WYRqiPMdQmQv_OA&s=10" alt="代替テキスト" width="300" height="200">
+  
+</span></div>
+
+<h2>Other Notable Types<br>
+  <span class="jp">その他の種類
+</span></h2>
+
+<div class="item">
+  <strong>Tanmen</strong><br>
+  <span class="jp">タンメン（Tanmen）</span><br>
+  <p>
+    A light, salt-based ramen topped with stir-fried vegetables. Popular for its mild taste and nutritional balance.<br>
+    塩味ベースで炒め野菜がのったあっさり系ラーメン。栄養バランスが良く、あっさりした味が特徴。
+  </p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXpkKIkkB35Tr4fgouPhCNrAaaAlwV5XqWUKQIFoWKnStAySytpXlRm5o&s=10" alt="代替テキスト" width="300" height="200">
+</div>
+
+<div class="item">
+  <strong>Tantanmen (Spicy Sesame Ramen)</strong><br>
+  <span class="jp">担々麺（Tantanmen）</span><br>
+  <p>
+    A spicy ramen inspired by Chinese Sichuan cuisine, featuring ground pork, sesame paste, and chili oil.<br>
+    中国の四川料理に由来する、ひき肉・ゴマ・ラー油を使った辛いラーメン。
+  </p>
+  <img src="https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/707202.jpeg" alt="代替テキスト" width="300" height="200">
+  
+</div>
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle('light');
+      body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
