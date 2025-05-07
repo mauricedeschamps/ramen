@@ -124,14 +124,22 @@
     }
     
     .section.expanded {
-      max-height: 3000px;
+      max-height: 70vh; /* ビューポートの70%まで拡張 */
+      overflow-y: auto; /* スクロール可能に */
+    }
+    
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 15px;
+      padding: 10px 0;
     }
     
     .item {
-      margin: 15px 0;
       padding: 15px;
       background-color: var(--bg-light);
       border-radius: 8px;
+      margin: 0;
     }
     
     .item img {
@@ -190,6 +198,25 @@
       text-decoration: underline;
     }
     
+    /* スクロールバーのスタイリング */
+    .section.expanded::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    .section.expanded::-webkit-scrollbar-track {
+      background: var(--bg-light);
+      border-radius: 10px;
+    }
+    
+    .section.expanded::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 10px;
+    }
+    
+    .section.expanded::-webkit-scrollbar-thumb:hover {
+      background: #ff5252;
+    }
+    
     @media (max-width: 768px) {
       .nav-menu {
         flex-direction: column;
@@ -202,6 +229,14 @@
       
       h1 {
         font-size: 1.8rem;
+      }
+      
+      .content {
+        grid-template-columns: 1fr;
+      }
+      
+      .section.expanded {
+        max-height: 60vh; /* モバイルでは少し小さめに */
       }
     }
   </style>
